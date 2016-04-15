@@ -243,6 +243,7 @@ public class game extends JFrame {
                     if (gameWon()) {
                         JOptionPane.showMessageDialog(rootPane,
                             "Congratulations! You've Won");
+                        timer.stop()
 
                         System.exit(0);
                     } // Winning condition
