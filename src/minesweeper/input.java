@@ -76,6 +76,12 @@ class InputEngine implements ActionListener {
                             JOptionPane.ERROR_MESSAGE);
                     text.setText("");
                     break;
+                } else if( size >= 25) {
+                    JOptionPane.showMessageDialog(parent,
+                            "Enter an integer smaller than 25", "Invalid Input!",
+                            JOptionPane.ERROR_MESSAGE);
+                    text.setText("");
+                    break;
                 } else {
                     parent.setVisible(false);
                     parent.set(size);
